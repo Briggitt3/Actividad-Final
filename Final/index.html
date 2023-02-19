@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>
+        Actividad final
+    </title>
+</head>
+<body>
+    <form action="" class="formulario" id="formulario">
+        <h1>Create Account</h1>
+
+        <!-- grupo: Nombre -->
+        <div class="form__grupo" id="grupo__nombre">
+            <label for="nombre" class="form__label">Nombre</label>
+            <div class="form__grupo-input">
+                <input type="text" class="form__input" name="nombre" id="nombre">
+                <img src="ima_genes/error-icon.svg" class="form__valid-estado1" id="img1">
+                <img src="ima_genes/success-icon.svg" class="form__valid-estado2" id="img2">
+            </div>
+            <p class="form__input-error">El nombre solo puede contener letras</p>
+            <p class="form__input-relleno">Rellene este campo</p>
+
+        </div>
+
+        <!-- grupo: Email -->
+        <div class="form__grupo" id="grupo__email">
+            <label for="email" class="form__label">Email</label>
+            <div class="form__grupo-input">
+                <input type="text" class="form__input" name="email" id="email">
+                <img src="ima_genes/error-icon.svg" class="form__valid-estado1" id="img1">
+                <img src="ima_genes/success-icon.svg" class="form__valid-estado2" id="img2">
+            </div>
+            <p class="form__input-error">Email invalido</p>
+            <p class="form__input-relleno">Rellene este campo</p>
+        </div>
+
+        <!-- grupo: Password -->
+        <div class="form__grupo" id="grupo__password">
+            <label for="password" class="form__label">Contraseña</label>
+            <div class="form__grupo-input">
+                <input type="password" class="form__input" name="password" id="password">
+                <img src="ima_genes/error-icon.svg" class="form__valid-estado1" id="img1">
+                <img src="ima_genes/success-icon.svg" class="form__valid-estado2" id="img2">
+            </div>
+            <p class="form__input-error">La contraseña tiene que tener 8 caracteres</p>
+            <p class="form__input-relleno">Rellene este campo</p>
+        </div>
+
+        <!-- grupo: Password2 -->
+        <div class="form__grupo" id="grupo__password2">
+            <label for="password2" class="form__label">Confirmar contraseña</label>
+            <div class="form__grupo-input">
+                <input type="password" class="form__input" name="password2" id="password2">
+                <img src="ima_genes/error-icon.svg" class="form__valid-estado1" id="img1">
+                <img src="ima_genes/success-icon.svg" class="form__valid-estado2" id="img2">
+            </div>
+            <p class="form__input-error">Las contraseñas no coinciden</p>
+            <p class="form__input-relleno">Rellene este campo</p>
+        </div>
+
+        <div class="form__grupo form__grupo-btn-enviar">
+            <button type="submit" class="form__btn">Enviar</button>
+            <p class="form__mensaje-exito" id="form__mensaje-exito">Enviado correctamente</p>
+        </div>
+
+    </form>
+    <script src="./index.js"></script>
+    
+</body>
+</html>
